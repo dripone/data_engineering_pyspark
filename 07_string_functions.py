@@ -1,0 +1,5 @@
+df = df.withColumn('upper_col', F.upper('column'))
+df = df.withColumn('lower_col', F.lower('column'))
+df = df.withColumn('substr_col', F.substring('column', 1, 3))
+df = df.withColumn('trim_col', F.trim('column'))
+df = df.withColumn('concat_col', F.concat(F.col('column1'), F.col('column2')))
