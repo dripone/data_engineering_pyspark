@@ -1,0 +1,5 @@
+df = df.withColumn('round_col', F.round('column', 0))
+df = df.withColumn('floor_col', F.floor('column'))
+df = df.withColumn('ceil_col', F.ceil('column'))
+df = df.withColumn('abs_col', F.abs('column'))
+df = df.withColumn('sqrt_col', F.sqrt('column'))
